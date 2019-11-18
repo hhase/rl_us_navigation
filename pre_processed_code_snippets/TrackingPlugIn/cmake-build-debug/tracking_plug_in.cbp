@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tracking_plug_in"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\ImFusionLib\;CMake Files\..\..\..\..\..\anaconda3\;CMake Files\..\..\..\..\..\anaconda3\lib\;CMake Files\..\..\..\..\..\anaconda3\lib\cmake\;CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5\;CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Widgets\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tracking_plug_in">
+				<Option output="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/libtracking_plug_in.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_HEADER_ONLY"/>
+					<Add option="-DIMFUSION_ENABLE_ASSERTIONS"/>
+					<Add option="-DIMFUSION_TIFF"/>
+					<Add option="-DIMFUSION_PNG"/>
+					<Add option="-DIMFUSION_JPEG"/>
+					<Add option="-DIMFUSION_HDF5"/>
+					<Add option="-DEIGEN_MPL2_ONLY"/>
+					<Add option="-DIMFUSION_OPENJPEG"/>
+					<Add option="-DIMFUSION_OPENCV"/>
+					<Add option="-DIMFUSION_FFMPEG"/>
+					<Add option="-DIMFUSION_OPENCL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DIMFUSION_CT_HAS_VISION"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/tracking_plug_in_autogen/include"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/include"/>
+					<Add directory="/usr/include/ImFusion/ext"/>
+					<Add directory="/home/hannes/anaconda3/include/qt"/>
+					<Add directory="/home/hannes/anaconda3/include/qt/QtCore"/>
+					<Add directory="/home/hannes/anaconda3/./mkspecs/linux-g++"/>
+					<Add directory="/home/hannes/anaconda3/include/qt/QtGui"/>
+					<Add directory="/home/hannes/anaconda3/include/qt/QtWidgets"/>
+					<Add directory="/usr/include/ImFusion/ext/dcmtk"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 tracking_plug_in"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tracking_plug_in/fast">
+				<Option output="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/libtracking_plug_in.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFMT_HEADER_ONLY"/>
+					<Add option="-DIMFUSION_ENABLE_ASSERTIONS"/>
+					<Add option="-DIMFUSION_TIFF"/>
+					<Add option="-DIMFUSION_PNG"/>
+					<Add option="-DIMFUSION_JPEG"/>
+					<Add option="-DIMFUSION_HDF5"/>
+					<Add option="-DEIGEN_MPL2_ONLY"/>
+					<Add option="-DIMFUSION_OPENJPEG"/>
+					<Add option="-DIMFUSION_OPENCV"/>
+					<Add option="-DIMFUSION_FFMPEG"/>
+					<Add option="-DIMFUSION_OPENCL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DIMFUSION_CT_HAS_VISION"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/tracking_plug_in_autogen/include"/>
+					<Add directory="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/include"/>
+					<Add directory="/usr/include/ImFusion/ext"/>
+					<Add directory="/home/hannes/anaconda3/include/qt"/>
+					<Add directory="/home/hannes/anaconda3/include/qt/QtCore"/>
+					<Add directory="/home/hannes/anaconda3/./mkspecs/linux-g++"/>
+					<Add directory="/home/hannes/anaconda3/include/qt/QtGui"/>
+					<Add directory="/home/hannes/anaconda3/include/qt/QtWidgets"/>
+					<Add directory="/usr/include/ImFusion/ext/dcmtk"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 tracking_plug_in/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tracking_plug_in_autogen">
+				<Option working_dir="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 tracking_plug_in_autogen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/cmake-build-debug/tracking_plug_in_autogen/mocs_compilation.cpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/include/tracking_plug_in/algorithm.hpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/include/tracking_plug_in/controller.hpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/include/tracking_plug_in/factory.hpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/include/tracking_plug_in/plugin.hpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/src/algorithm.cpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/src/controller.cpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/src/controller.ui">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/src/factory.cpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/src/plugin.cpp">
+			<Option target="tracking_plug_in"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../../../usr/lib/cmake/ImFusionLib/ImFusionLibConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\ImFusionLib\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../../../usr/lib/cmake/ImFusionLib/ImFusionLibConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\ImFusionLib\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../../../usr/lib/cmake/ImFusionLib/ImFusionLibTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\ImFusionLib\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../../../usr/lib/cmake/ImFusionLib/ImFusionLibTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\cmake\ImFusionLib\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/hannes/Desktop/Thesis/robotic_rl/Code/TrackingPlugIn/../../../../../anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\anaconda3\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

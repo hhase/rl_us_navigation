@@ -1,0 +1,102 @@
+---
+version: 1
+
+kind: experiment
+
+framework: pytorch
+
+tags: [soft_target_network, ADAM]
+
+build:
+  image: pytorch/pytorch:1.2-cuda10.0-cudnn7-runtime
+  build_steps:
+    - pip install -r requirements.txt
+    - pip install tensorboardX
+
+environment:
+  resources:
+    cpu:
+      requests: 3
+      limits: 8
+    memory:
+      requests: 4024
+      limits: 16392
+    gpu:
+      requests: 1
+      limits: 1
+
+declarations:
+  run_name:           "Dueling_ResNet"
+  #Grid params
+  steps_x:            11  #5  #
+  steps_y:            15  #20 #
+  goal_x_coord:       5   #2  #
+  goal_y_coord:       0   #10 #
+  margin_x:           0   #0  #
+  margin_y:           0   #0  #
+
+  #Env params
+  priority_exponent:  0.5
+  priority_weight:    0.1
+  reward_correct_nop: 1.0
+  reward_false_nop:  -0.25
+  reward_border:     -0.1
+  reward_move_closer: 0.05
+  reward_move_away:  -0.1
+
+  #General params
+  batch_size_train:   4
+  lr:                 0.001
+  episodes:           2000
+  max_time_steps:     50
+  log_interval:       50
+
+  #RL params
+  memory_size:        5000
+  min_memory_size:    5000
+  target_update:      20
+  target_update_lr:   0.001
+  eps_start:          1.0
+  eps_end:            0.01
+  eps_decay:          0.0001
+  eps_decay_begin:    2500
+  gamma:              0.999
+
+  prioritized_replay: true
+  soft_target_update: false
+  dueling_dqn:        true
+  noisy_network:      false
+
+run:
+  cmd: python -u main.py --run_name={{ run_name }}\
+                         --steps_x={{ steps_x }}\
+                         --steps_y={{ steps_y }}\
+                         --goal_x_coord={{ goal_x_coord }}\
+                         --goal_y_coord={{ goal_y_coord }}\
+                         --margin_x={{ margin_x }}\
+                         --margin_y={{ margin_y }}\
+                         --priority_exponent={{ priority_exponent }}\
+                         --priority_weight={{ priority_weight }}\
+                         --reward_correct_nop={{ reward_correct_nop }}\
+                         --reward_false_nop={{ reward_false_nop }}\
+                         --reward_border={{ reward_border }}\
+                         --reward_move_closer={{ reward_move_closer }}\
+                         --reward_move_away={{ reward_move_away }}\
+                         --batch_size_train={{ batch_size_train }}\
+                         --episodes={{ episodes }}\
+                         --lr={{ lr }}\
+                         --max_time_steps={{ max_time_steps }}\
+                         --log_interval={{ log_interval }}\
+                         --memory_size={{ memory_size }}\
+                         --min_memory_size={{ min_memory_size }}\
+                         --target_update={{ target_update }}\
+                         --target_update_lr={{ target_update_lr }}\
+                         --eps_start={{ eps_start }}\
+                         --eps_end={{ eps_end }}\
+                         --eps_decay={{ eps_decay }}\
+                         --eps_decay_begin={{ eps_decay_begin }}\
+                         --gamma={{ gamma }}\
+                         --prioritized_replay={{ prioritized_replay }}\
+                         --soft_target_update={{ soft_target_update }}\
+                         --dueling_dqn={{ dueling_dqn }}\
+                         --noisy_network={{ noisy_network }}

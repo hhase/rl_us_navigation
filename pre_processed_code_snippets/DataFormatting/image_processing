@@ -1,0 +1,56 @@
+import torch
+import numpy as np
+import scipy.signal
+import scipy.ndimage
+from PIL import Image
+import matplotlib.pyplot as plt
+import torchvision.transforms as T
+
+frame_path = "./../../../Data/Sacrum_Magda/sacrum_sweep_frames/"
+frame = np.array(Image.open(frame_path + "sacrum_translation1723.png"))
+
+frame = np.ascontiguousarray(frame, dtype=np.float32) / 255
+frame = torch.from_numpy(frame)
+
+plt.imshow(frame, cmap='gray')
+plt.show()
+
+resize_x = 272
+resize_y = 258
+resize = T.Compose([
+    T.ToPILImage(),
+    T.Resize((resize_x, resize_y)),
+    T.ToTensor()
+])
+
+base_frame = resize(frame).squeeze().numpy()
+frame_eq = np.sort(base_frame.ravel()).searchsorted(base_frame)
+
+bw_mask = frame_eq > 0
+disc = np.array([[0,0,0,0,1,0,0,0,0],
+                 [0,0,1,1,1,1,1,0,0],
+                 [0,1,1,1,1,1,1,1,0],
+                 [0,1,1,1,1,1,1,1,0],
+                 [1,1,1,1,1,1,1,1,1],
+                 [0,1,1,1,1,1,1,1,0],
+                 [0,1,1,1,1,1,1,1,0],
+                 [0,0,1,1,1,1,1,0,0],
+                 [0,0,0,0,1,0,0,0,0]])
+
+bw_mask = scipy.ndimage.binary_opening(bw_mask, disc)
+bw_mask = scipy.ndimage.binary_closing(bw_mask, disc)
+
+dx_frame, dy_frame = np.gradient(base_frame)
+
+print(base_frame.shape, dy_frame.shape)
+frame = base_frame + dy_frame
+frame = frame * bw_mask
+
+#frame = scipy.ndimage.gaussian_filter(frame, sigma=2.0)
+frame = scipy.signal.medfilt(frame,3)
+frame = (frame - np.min(frame)) / np.ptp(frame)
+print(np.min(frame), np.max(frame))
+
+#plt.imshow(base_frame - frame + dx_frame + 3*dy_frame, cmap='gray')
+plt.imshow(frame, cmap='gray')
+plt.show()
